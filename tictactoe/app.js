@@ -119,6 +119,22 @@ app.post('/', (request, response) => {
             throw error("Färgen för spelare 2 kan inte vara svart eller vit!");
         }
 
+        if(nick_1 === nick_2) {
+            console.log('spelare 1 och spelare 2 har samma namn')
+            throw error("spelare1 och spelare 2 kan ej använda samma  nick name");
+        } else {
+            console.log("spelare 1 och spelae2 har olka nick");        
+        }
+
+        if(color_1 === color_2) {
+            throw error ("kan ej använda samma färg, vänligen välj olika färger");
+        } else {console.log("spelare 1 och två har olika färger");}
+
+        if(color_1 !== color_2 && nick_1 !== nick_2) {
+            res.cookie()
+        }
+
+        
 
         
     } catch (err) {
